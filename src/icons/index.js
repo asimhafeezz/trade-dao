@@ -17,6 +17,7 @@ import { ReactComponent as SwapIcon } from './swap.svg'
 import { ReactComponent as TetherCoinIcon } from './tether-coin.svg'
 import { ReactComponent as EthCoinIcon } from './eth-coin.svg'
 import { ReactComponent as ExchangeCoinIcon } from './exchange-coins.svg'
+import { ReactComponent as DownArrowIcon } from './down-arrow.svg'
 
 export {
 	BellIcon,
@@ -38,4 +39,5 @@ export {
 	TetherCoinIcon,
 	EthCoinIcon,
 	ExchangeCoinIcon,
+	DownArrowIcon,
 }

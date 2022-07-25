@@ -23,7 +23,25 @@
 	//list style
 	list-style-type: none;
 
+	//create reuseable scss code
+	.active-bar-menu {
+		background: linear-gradient(90deg, rgba(176, 83, 216, 0.245) 80%, #6a6eec51 100%);
+		border-radius: 2px;
+		border-left: 5px solid $purple;
+		a {
+			font-weight: 600;
+			font-size: 17px;
+			line-height: 24px;
+			color: $white;
+			text-decoration: none;
+			span {
+				margin-left: 15px;
+			}
+		}
+	}
+
 	.sidebar-top {
+		position: relative;
 		//main-logo
 		.main-logo {
 			margin-bottom: 0px;
@@ -33,15 +51,16 @@
 		.sidebar-button-icon {
 			position: absolute;
 			right: 0;
-			margin-right: 0px;
+			margin-right: -20px;
 			z-index: 999;
 			margin-top: 10px;
 		}
 
 		.sidebar-list {
 			margin-top: 40px;
-			.sidebar-list-item,
-			.sidebar-list-sub-item {
+			.sidebar-list-item {
+				//smoothness
+				transition: all 0.3s ease-in-out;
 				padding: 10px;
 				a {
 					display: flex;
@@ -56,23 +75,10 @@
 					}
 				}
 				&:nth-child(2) {
-					background: linear-gradient(
-						90deg,
-						rgba(176, 83, 216, 0.245) 80%,
-						#6a6eec51 100%
-					);
-					border-radius: 2px;
-					border-left: 5px solid $purple;
-					a {
-						font-weight: 600;
-						font-size: 17px;
-						line-height: 24px;
-						color: $white;
-						text-decoration: none;
-						span {
-							margin-left: 15px;
-						}
-					}
+					@extend .active-bar-menu;
+				}
+				&:hover {
+					@extend .active-bar-menu;
 				}
 			}
 			.sidebar-list-sub-item {
@@ -149,5 +155,10 @@
 			margin-top: 15px;
 			margin-bottom: 30px;
 		}
+	}
+
+	//smaller than 800px hide sidebar
+	@media (max-width: 900px) {
+		display: none;
 	}
 }

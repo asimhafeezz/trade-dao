@@ -38,3 +38,23 @@
 		outline: none;
 	}
 }
+
+//button
+@mixin button {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: center;
+	background: linear-gradient(90deg, rgba(176, 83, 216, 0.88) 0%, #6a6eec 100%);
+	box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);
+	border-radius: 2px;
+	border-radius: 4px;
+	padding: 10px 15px;
+	color: $white;
+	cursor: pointer;
+	border: none;
+	width: 100%;
+	&:focus {
+		outline: none;
+	}
+}

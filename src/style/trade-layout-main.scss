@@ -1,5 +1,8 @@
 .trade-layout-main {
 	main {
-		margin-left: 240px;
+		margin-left: 150px;
+		@media (max-width: 900px) {
+			margin-left: 0;
+		}
 	}
 }

@@ -12,12 +12,14 @@ const TradeInputCard = ({ inputValue, dropDownText, dropDownIcon, heading }) => 
 			</section>
 			<div className='input-group'>
 				<input type='text' value={inputValue} />
-				<DropDown
-					icon={dropDownIcon}
-					text={dropDownText}
-					defaultText={defaultSelectText}
-					optionsList={countryList}
-				/>
+				<section className='dropdown-sect'>
+					<DropDown
+						icon={dropDownIcon}
+						text={dropDownText}
+						defaultText={defaultSelectText}
+						optionsList={countryList}
+					/>
+				</section>
 			</div>
 		</div>
 	)
@@ -57,8 +59,7 @@ export const Swap = () => {
 					<p>Tx cost 0.092347 =(~24.56)</p>
 					<p>~0.00037809(-0.23)</p>
 				</section>
-				<br />
-				<section className='headline'>
+				<section className='headline m-top'>
 					<h3>1 SLAY</h3>
 					<h3>1</h3>
 				</section>
@@ -67,20 +68,35 @@ export const Swap = () => {
 					<p>~0.00037809(-0.23)</p>
 				</section>
 			</section>
+
+			{/* swap button */}
+			<button>Swap</button>
+
+			{/* token texts */}
+			<section className='token-texts'>
+				<section className='headline'>
+					<p>
+						<small>1 DAI Price</small>
+					</p>
+					<p>
+						<small>1 ETH=28.2932832 DAI (`$2,4567)</small>
+					</p>
+				</section>
+				<section className='headline'>
+					<p>
+						<small>1 ETH Price</small>
+					</p>
+					<p>
+						<small>Unknown</small>
+					</p>
+				</section>
+			</section>
 		</div>
 	)
 }
 
 const defaultSelectText = 'Please select an option'
 const countryList = [
-	{ id: 1, name: 'Australia' },
-	{ id: 2, name: 'Brazil' },
-	{ id: 3, name: 'China' },
-	{ id: 4, name: 'Denmark' },
-	{ id: 5, name: 'Egypt' },
-	{ id: 6, name: 'Finland' },
-	{ id: 7, name: 'Ghana' },
-	{ id: 8, name: 'Hungary' },
-	{ id: 9, name: 'India' },
-	{ id: 10, name: 'Japan' },
+	{ id: 1, name: 'USDT' },
+	{ id: 2, name: 'ETH' },
 ]

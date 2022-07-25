@@ -13,6 +13,11 @@
 		padding-right: 20px;
 		border-bottom: 1px solid $gray;
 		font-size: 18px;
+		font-weight: 500;
+		width: 100%;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
 	}
 
 	.selected-text::after {
@@ -21,6 +26,7 @@
 		right: 10px;
 		top: 16px;
 		border: 7px solid transparent;
+		margin-top: 5px;
 		border-color: $gray2 transparent transparent transparent;
 	}
 

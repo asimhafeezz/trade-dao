@@ -18,7 +18,7 @@ import {
 const SidebarListItemWithIcon = ({ icon, text, childs }) => {
 	return (
 		<>
-			<li className='sidebar-list-item'>
+			<li className={'sidebar-list-item'}>
 				<a href='#'>
 					{icon && icon}
 					<span>{text}</span>
