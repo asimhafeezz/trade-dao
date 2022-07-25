@@ -39,17 +39,6 @@ body {
 	select {
 		border-radius: 3px !important;
 	}
-	table {
-		th,
-		td {
-			white-space: nowrap !important;
-		}
-	}
-
-	input[type='checkbox'] {
-		width: 15px;
-		cursor: pointer;
-	}
 }
 
 //layout
