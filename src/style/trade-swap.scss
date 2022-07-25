@@ -1,0 +1,110 @@
+.swap-section {
+	position: relative;
+	width: 440px;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 530px;
+	background-color: $gray;
+	border-radius: 2px;
+	padding: 20px;
+	h2 {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 28px;
+		background: linear-gradient(271.68deg, #6d7784 13.11%, #d3d6d9 96.64%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+	p {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		background: linear-gradient(271.68deg, #6d7784 13.11%, #d3d6d9 96.64%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 20px;
+	}
+
+	.trade-input-card {
+		background: #1a1a20;
+		border-radius: 4px;
+		padding: 0 20px;
+		padding-top: -5px;
+		padding-bottom: 20px;
+		.inner-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			h3 {
+				color: $white;
+				font-size: 16px;
+			}
+			p {
+				font-size: 10px;
+				line-height: 15px;
+				letter-spacing: 0.02em;
+			}
+			.color-text {
+				margin-left: 15px;
+				background: linear-gradient(90deg, rgba(200, 95, 245, 0.88) 0%, #7579ff 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+		}
+
+		.input-group {
+			margin-top: -10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			input {
+				flex: 1;
+				@include input;
+				border-right: 1px solid $dark-gray;
+				border-top-right-radius: 0px !important;
+				border-bottom-right-radius: 0px !important;
+				padding: 13.5px !important;
+				color: $white !important;
+				font-size: 18px !important;
+			}
+		}
+	}
+
+	.icon-button {
+		@include flex-center;
+		.exchange-coins-button-icon {
+			margin-top: -15px;
+			margin-bottom: -15px;
+		}
+	}
+
+	.exchange-text {
+		margin-top: 10px;
+		background: #1a1a20;
+		border-radius: 4px;
+		padding: 0 20px;
+		.headline {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			h3 {
+				color: $white;
+				margin-top: -20px;
+			}
+			p {
+				margin-top: -20px;
+			}
+		}
+	}
+}

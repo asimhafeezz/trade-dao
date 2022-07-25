@@ -1,0 +1,71 @@
+//font family
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+@import './variables.scss';
+@import './mixins.scss';
+
+//custom scrollbar
+/* width */
+*::-webkit-scrollbar {
+	width: 3.5px;
+	height: 3.5px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+	background: rgb(201, 200, 200);
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+	background: rgb(124, 124, 124);
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+
+	background-color: $black;
+	p {
+		color: $white;
+	}
+
+	input,
+	select {
+		border-radius: 3px !important;
+	}
+	table {
+		th,
+		td {
+			white-space: nowrap !important;
+		}
+	}
+
+	input[type='checkbox'] {
+		width: 15px;
+		cursor: pointer;
+	}
+}
+
+//layout
+@import './trade-layout-main.scss';
+//components
+@import './header.scss';
+@import './sidebar.scss';
+@import './trade.scss';
+@import './trade-swap.scss';
+@import './phoneinput.scss';
+@import './authpage.scss';
+@import './login.scss';
+@import './signup.scss';
+@import './verification.scss';
+@import './cardinfo.scss';
+@import './util-classes.scss';
+
+//utils
+@import './utils/index.scss';

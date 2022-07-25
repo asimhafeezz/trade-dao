@@ -1,0 +1,59 @@
+//input-error border red
+.input-error {
+	border: 0.5px solid $error-color !important;
+}
+.no-input-error {
+	border: 0.5px solid transparent !important;
+}
+
+.group-input-error-for-left {
+	border: 0.5px solid $error-color !important;
+	border-right: 0.5px solid transparent !important;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.group-input-error-for-right {
+	border: 0.5px solid $error-color !important;
+	border-left: 0.5px solid transparent !important;
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+
+.form-error {
+	font-weight: 700;
+	font-size: 12px;
+	color: #c20000;
+}
+
+.form-success {
+	font-weight: 700;
+	font-size: 12px;
+	color: #54b84d;
+}
+
+.big-error-section {
+	height: 400px;
+}
+
+.whole-loading-section {
+	height: 80vh;
+}
+
+.small-error-section {
+	height: 150px;
+	margin-top: 50px;
+	padding-top: 20px;
+}
+
+.table-error {
+	font-weight: bold;
+	font-size: 18px;
+	color: #c7c7c7;
+}
+
+.form-error-small {
+	font-size: 12px !important;
+	line-height: 20px !important;
+	color: #c20000 !important;
+}

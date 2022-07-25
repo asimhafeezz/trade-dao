@@ -1,0 +1,43 @@
+.trade {
+	padding: 20px;
+	padding-top: 0px;
+	.tabs {
+		.tabs-list {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			list-style-type: none;
+			li {
+				padding-top: 10px;
+				padding-bottom: 15px;
+				margin-right: 20px;
+				a {
+					&:first-child {
+						color: $white;
+					}
+					text-decoration: none;
+					color: $dark-gray;
+					font-size: 18px;
+					font-weight: 500;
+					line-height: 28px;
+					&:hover {
+						color: $white;
+					}
+				}
+				&:first-child {
+					border-bottom: 4px solid $purple;
+					border-radius: 2px;
+				}
+			}
+		}
+	}
+
+	.body {
+		//center all
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

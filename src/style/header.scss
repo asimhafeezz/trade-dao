@@ -1,0 +1,33 @@
+.header {
+	//util-section
+	.header-utils {
+		position: fixed;
+		right: 0;
+		margin-right: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 15px;
+		background-color: $gray;
+		padding: 7px 10px;
+		border-radius: 4px;
+		padding-right: 5px;
+		padding-left: 20px;
+
+		p {
+			font-size: 12px;
+			font-weight: 400;
+			color: $white;
+		}
+
+		.address-card {
+			background-color: $black;
+			border-radius: 4px;
+			padding: 0px 15px;
+			p {
+				font-size: 15px;
+				font-weight: 500;
+			}
+		}
+	}
+}

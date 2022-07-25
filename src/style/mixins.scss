@@ -1,0 +1,40 @@
+@mixin disable-input-type-number-arrows {
+	/* Chrome, Safari, Edge, Opera */
+	input[type='number']::-webkit-outer-spin-button,
+	input[type='number']::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+	/* Firefox */
+	input[type='number'] {
+		-moz-appearance: textfield;
+	}
+}
+
+@mixin card {
+	background: #ffffff;
+	box-shadow: 0px 21px 28px rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+	padding: 20px 40px;
+}
+
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+//design input with blackground black
+@mixin input {
+	background-color: $black;
+	border-radius: 4px;
+	padding: 10px 15px;
+	color: $white;
+	font-size: 15px;
+	font-weight: 500;
+	border: none;
+	&:focus {
+		outline: none;
+	}
+}
